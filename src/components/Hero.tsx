@@ -39,7 +39,7 @@ export function Hero() {
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink-300 sm:text-xl">
           Civicraft je <strong className="text-ink-100">politický survival</strong>, kde tvůj hlas
-          opravdu rozhoduje. Reálné volby, národní pokladna, dekrety a vlastní města — demokracie
+          opravdu rozhoduje. Reálné volby, národní pokladna, dekrety a vlastní města - demokracie
           v Minecraftu, jak ji znáš jen tady.
         </p>
 

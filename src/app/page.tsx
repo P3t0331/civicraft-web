@@ -74,7 +74,7 @@ export default function Home() {
                 align="left"
                 eyebrow="Moc patří hráčům"
                 title={<>Unavuje tě <span className="text-gradient-gold">staff abuse?</span></>}
-                subtitle="Servery, kde admini rozhodují o všem a hráči nemají slovo? Tady ne. Na Civicraftu drží otěže volení prezidenti — ne staff."
+                subtitle="Servery, kde admini rozhodují o všem a hráči nemají slovo? Tady ne. Na Civicraftu drží otěže volení prezidenti - ne staff."
               />
               <div className="mt-8 flex flex-wrap gap-3">
                 <Button href="/jak-se-hraje" variant="secondary">Jak funguje vláda</Button>
@@ -85,7 +85,7 @@ export default function Home() {
               {[
                 ["🗳️", "Server řídí volení prezidenti, ne admini."],
                 ["🚫", "Staff nikdy nezasahuje do politiky a nekandiduje."],
-                ["🛡️", "Staff jen moderuje a vymáhá pravidla — nic víc."],
+                ["🛡️", "Staff jen moderuje a vymáhá pravidla - nic víc."],
                 ["💬", "Nové funkce přidáváme podle zpětné vazby hráčů."],
               ].map(([icon, text], i) => (
                 <Reveal key={text} delay={i * 70}>
@@ -105,7 +105,7 @@ export default function Home() {
         <SectionHeading
           eyebrow="Tvoje cesta"
           title={<>Od <span className="text-gradient-gold">imigranta</span> k prezidentovi</>}
-          subtitle="Každý začíná stejně — s holýma rukama v divočině. Kam to dotáhneš, záleží jen na tobě."
+          subtitle="Každý začíná stejně - s holýma rukama v divočině. Kam to dotáhneš, záleží jen na tobě."
         />
         <ol className="mt-14 grid gap-6 md:grid-cols-4">
           {journey.map((s, i) => (
@@ -155,7 +155,7 @@ export default function Home() {
             ))}
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-center text-sm text-ink-400">
-            A tohle je teprve začátek — dekrety i pravomoci budeme rozšiřovat. V budoucnu si VIP hráči
+            A tohle je teprve začátek - dekrety i pravomoci budeme rozšiřovat. V budoucnu si VIP hráči
             odemknou speciální prezidentské bonusy, které aktivují po zvolení.{" "}
             <Link href="/jak-se-hraje" className="font-semibold text-gold-400 hover:underline">Více →</Link>
           </p>
@@ -183,10 +183,10 @@ export default function Home() {
               align="left"
               eyebrow="Generátor světa Iris"
               title={<>Svět, jaký jsi <span className="text-gradient-gold">ještě neviděl</span></>}
-              subtitle="Civicraft běží na pokročilém generátoru světa Iris s více než 300 biomy — a postupně přidáváme i vlastní. Žádné nudné placky, každá výprava do divočiny je objevování."
+              subtitle="Civicraft běží na pokročilém generátoru světa Iris s více než 300 biomy - a postupně přidáváme i vlastní. Žádné nudné placky, každá výprava do divočiny je objevování."
             />
             <p className="mt-5 text-sm leading-relaxed text-ink-300">
-              Pro ještě hezčí zážitek doporučujeme shader mod <strong className="text-ink-100">Iris</strong> —
+              Pro ještě hezčí zážitek doporučujeme shader mod <strong className="text-ink-100">Iris</strong> -
               rozsvítí náš svět nasvícením, stíny a vodou jako z pohlednice.
             </p>
             <div className="mt-6">
@@ -237,7 +237,7 @@ export default function Home() {
               </h2>
               <p className="mt-4 max-w-xl text-base leading-relaxed text-ink-300">
                 Civicraft se hraje nejlíp s kamarády. Společně založíte město, rozdělíte si profese
-                a budujete dvakrát rychleji. A hlavně — čím větší a aktivnější vaše parta je, tím
+                a budujete dvakrát rychleji. A hlavně - čím větší a aktivnější vaše parta je, tím
                 větší šance, že někdo z vás vyhraje prezidentské volby a bude vládnout celému národu.
               </p>
             </div>
@@ -268,7 +268,7 @@ export default function Home() {
                 <h2 className="mt-4 font-display text-2xl font-bold text-ink-100">Jednoduchost na prvním místě</h2>
                 <p className="mt-3 text-sm leading-relaxed text-ink-300">
                   Žádné zahlcení. Při příchodu na server tě nezasype milion holohramů, příkazů, pravidel
-                  ani reklam na VIP. Spawn je čistý a přehledný — hned víš, co dělat. Server stavíme tak,
+                  ani reklam na VIP. Spawn je čistý a přehledný - hned víš, co dělat. Server stavíme tak,
                   aby byl srozumitelný a aby tě bavil od první minuty. <strong className="text-ink-100">Hráč na prvním místě.</strong>
                 </p>
               </div>
@@ -283,10 +283,10 @@ export default function Home() {
                 </div>
                 <h2 className="mt-4 font-display text-2xl font-bold text-ink-100">Tohle je teprve začátek</h2>
                 <p className="mt-3 text-sm leading-relaxed text-ink-300">
-                  Jsme v první fázi — zatím běží jen to podstatné a server rozšiřujeme podle zpětné vazby
+                  Jsme v první fázi - zatím běží jen to podstatné a server rozšiřujeme podle zpětné vazby
                   hráčů. Pokud nás bude hrát dost lidí, v dalších fázích zrušíme jeden národ a necháme vás
                   zakládat <strong className="text-ink-100">vlastní národy</strong>, válčit o území a budovat
-                  různé formy vlády — demokracii, autokracii a další. Pomoz nám to rozjet. Stačí hrát.
+                  různé formy vlády - demokracii, autokracii a další. Pomoz nám to rozjet. Stačí hrát.
                 </p>
               </div>
             </Reveal>

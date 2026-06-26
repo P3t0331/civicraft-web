@@ -31,7 +31,7 @@ const pixel = Press_Start_2P({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline} | CZ/SK Minecraft server`,
+    default: `${siteConfig.name} - ${siteConfig.tagline} | CZ/SK Minecraft server`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -53,12 +53,12 @@ export const metadata: Metadata = {
     locale: "cs_CZ",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
+    title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
   },
   robots: { index: true, follow: true },
@@ -85,7 +85,7 @@ const jsonLd = {
     },
     {
       "@type": "VideoGame",
-      name: `${siteConfig.name} — ${siteConfig.tagline}`,
+      name: `${siteConfig.name} - ${siteConfig.tagline}`,
       gamePlatform: "Minecraft: Java Edition",
       applicationCategory: "Game",
       operatingSystem: "Windows, macOS, Linux",

@@ -1,7 +1,7 @@
 import { siteConfig } from "@/config/site";
 
 /**
- * Civicraft logo — pixelová „koruna nad hlasovací urnou".
+ * Civicraft logo - pixelová „koruna nad hlasovací urnou".
  * Spojuje občanský (volby) a Minecraft (blokový) motiv.
  */
 export function LogoMark({ className = "h-9 w-9" }: { className?: string }) {

@@ -1,5 +1,5 @@
 /**
- * Herní obsah Civicraftu — čerpá z reálné konfigurace serveru a pluginů
+ * Herní obsah Civicraftu - čerpá z reálné konfigurace serveru a pluginů
  * (CivicraftGov, CivicraftJobs, Towny, LuckPerms, Iris). Veškerý text je v češtině.
  */
 
@@ -26,7 +26,7 @@ export const pillars: Pillar[] = [
   {
     icon: "🌍",
     title: "Unikátní svět",
-    text: "Běžíme na pokročilém generátoru světa Iris s více než 300 biomy, jaké jinde neuvidíš — a postupně budujeme i vlastní. Každá expedice do divočiny je objevování.",
+    text: "Běžíme na pokročilém generátoru světa Iris s více než 300 biomy, jaké jinde neuvidíš - a postupně budujeme i vlastní. Každá expedice do divočiny je objevování.",
     accent: "civic",
   },
 ];
@@ -46,17 +46,17 @@ export const presidentialPowers: Power[] = [
   {
     icon: "📊",
     title: "Národní daň",
-    text: "Nastav daň měst i daň z práce. Vyšší příjmy do pokladny — ale nespokojení občané tě můžou odvolat.",
+    text: "Nastav daň měst i daň z práce. Vyšší příjmy do pokladny - ale nespokojení občané tě můžou odvolat.",
   },
   {
     icon: "💸",
     title: "Stimul pro občany",
-    text: "Vyplať jednorázový balík každému online Občanovi — populární tah, hlavně před volbami.",
+    text: "Vyplať jednorázový balík každému online Občanovi - populární tah, hlavně před volbami.",
   },
   {
     icon: "📜",
     title: "Dekrety (server eventy)",
-    text: "Vyhlas celonárodní buffy placené z pokladny — festival XP, žatva, dvojité dropy a další.",
+    text: "Vyhlas celonárodní buffy placené z pokladny - festival XP, žatva, dvojité dropy a další.",
   },
 ];
 
@@ -68,7 +68,7 @@ export type Decree = {
   cost: string;
 };
 
-// Z config.yml sekce `decrees` (startovní sada — viz poznámka o roadmapě).
+// Z config.yml sekce `decrees` (startovní sada - viz poznámka o roadmapě).
 export const decrees: Decree[] = [
   { name: "Festival XP", icon: "✨", effect: "1.5× XP ze všeho", duration: "24 h", cost: "10 000" },
   { name: "Festival Žatvy", icon: "🌾", effect: "Zrychlený růst plodin", duration: "48 h", cost: "15 000" },
@@ -84,13 +84,13 @@ export type Job = {
   desc: string;
 };
 
-// Z CivicraftJobs (vlastní plugin) — 7 profesí, výdělek + XP za každou akci.
+// Z CivicraftJobs (vlastní plugin) - 7 profesí, výdělek + XP za každou akci.
 export const jobs: Job[] = [
   { name: "Horník", icon: "⛏️", color: "text-ink-200", desc: "Těž rudy a kámen. Čím hlouběji se vydáš, tím cennější suroviny a vyšší mzda. Šance na extra dropy." },
-  { name: "Dřevorubec", icon: "🪓", color: "text-gold-400", desc: "Kácej stromy a zpracovávej dřevo — základní surovina každého města a stabilní příjem." },
+  { name: "Dřevorubec", icon: "🪓", color: "text-gold-400", desc: "Kácej stromy a zpracovávej dřevo - základní surovina každého města a stabilní příjem." },
   { name: "Farmář", icon: "🌱", color: "text-emerald-400", desc: "Pěstuj a sklízej plodiny. S vyšším levelem se ti políčka sama znovu zasadí (auto-replant)." },
   { name: "Lovec", icon: "🏹", color: "text-civic-400", desc: "Lov zvířata i nepřátelské moby. Odměny za úlovky a šance na vzácné dropy." },
-  { name: "Stavitel", icon: "🧱", color: "text-gold-400", desc: "Pokládej bloky a stavěj. Vyděláváš tím, co tvoří kostru každého města — ideální pro budovatele." },
+  { name: "Stavitel", icon: "🧱", color: "text-gold-400", desc: "Pokládej bloky a stavěj. Vyděláváš tím, co tvoří kostru každého města - ideální pro budovatele." },
   { name: "Rybář", icon: "🎣", color: "text-emerald-400", desc: "Rybař v klidu u vody. Šance na vzácný úlovek a poklady, které jinde nezískáš." },
   { name: "Řemeslník", icon: "⚒️", color: "text-civic-400", desc: "Vyráběj a craftěj předměty. Profese pro ty, kdo radši tvoří než dolují." },
 ];
@@ -110,7 +110,7 @@ export const journey: JourneyStep[] = [
     tag: "Start · prvních ~10 hodin",
     title: "Přežij v divočině",
     icon: "🧳",
-    text: "Začínáš jako Imigrant. Vydej se do divočiny, postav si základnu, rozjeď profese přes /jobs a vydělej první peníze. V divočině je griefing povolen — hraje se naostro.",
+    text: "Začínáš jako Imigrant. Vydej se do divočiny, postav si základnu, rozjeď profese přes /jobs a vydělej první peníze. V divočině je griefing povolen - hraje se naostro.",
   },
   {
     rank: "Občan",
@@ -124,14 +124,14 @@ export const journey: JourneyStep[] = [
     tag: "Volitelně",
     title: "Postav město s kamarády",
     icon: "🏘️",
-    text: "Příkazem /town create <název> založíš město a staneš se starostou. Pozvi kamarády — čím víc vás je, tím silnější město a tím větší šance, že jeden z vás usedne do prezidentského křesla.",
+    text: "Příkazem /town create <název> založíš město a staneš se starostou. Pozvi kamarády - čím víc vás je, tím silnější město a tím větší šance, že jeden z vás usedne do prezidentského křesla.",
   },
   {
     rank: "Prezident",
     tag: "Vrchol",
     title: "Vyhraj volby a vládni",
     icon: "👑",
-    text: "Vyhraj volby a získej národní pokladnu, daně a dekrety. Tvoje rozhodnutí ovlivní celý server — dokud tě voliči nechají vládnout.",
+    text: "Vyhraj volby a získej národní pokladnu, daně a dekrety. Tvoje rozhodnutí ovlivní celý server - dokud tě voliči nechají vládnout.",
   },
 ];
 
@@ -173,7 +173,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Je server zdarma?",
-    a: "Ano, hraní je kompletně zdarma. Server podpoříš dobrovolně koupí VIP nebo klíčů do truhel — přidávají komfort a kosmetiku, nikdy ne herní převahu. Žádné pay-to-win.",
+    a: "Ano, hraní je kompletně zdarma. Server podpoříš dobrovolně koupí VIP nebo klíčů do truhel - přidávají komfort a kosmetiku, nikdy ne herní převahu. Žádné pay-to-win.",
   },
   {
     q: "Jak se stanu Občanem a můžu volit?",
@@ -181,7 +181,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Je povolený griefing?",
-    a: "V divočině ano — hraje se naostro. Uvnitř měst je griefing díky Towny vypnutý, takže tvoje stavby ve městě jsou v bezpečí. Chceš klid? Postav nebo si najdi město.",
+    a: "V divočině ano - hraje se naostro. Uvnitř měst je griefing díky Towny vypnutý, takže tvoje stavby ve městě jsou v bezpečí. Chceš klid? Postav nebo si najdi město.",
   },
   {
     q: "Můžu hrát s kamarády?",
@@ -189,7 +189,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Co je na světě tak unikátního?",
-    a: "Civicraft běží na pokročilém generátoru světa Iris s více než 300 biomy, které v běžném Minecraftu neuvidíš — a postupně budujeme i vlastní. Pro nejlepší zážitek doporučujeme shader mod Iris.",
+    a: "Civicraft běží na pokročilém generátoru světa Iris s více než 300 biomy, které v běžném Minecraftu neuvidíš - a postupně budujeme i vlastní. Pro nejlepší zážitek doporučujeme shader mod Iris.",
   },
   {
     q: "Podporujete cracked / nepremium účty?",

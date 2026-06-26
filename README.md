@@ -1,4 +1,4 @@
-# Civicraft.cz — web
+# Civicraft.cz - web
 
 Oficiální web pro CZ/SK Minecraft server **Civicraft** (Politický Survival).
 Next.js 16 (App Router) · TypeScript · Tailwind CSS v4.
@@ -29,16 +29,16 @@ jdou jedním místem přes `src/config/site.ts`.
 
 ## Struktura
 
-- `src/app/` — stránky (Domů, Jak začít, Jak se hraje, Obchod, Mapa, Tým, Pravidla)
-- `src/app/api/status/` — proxy na [mcsrvstat.us](https://mcsrvstat.us) pro live počet hráčů (cache 60 s)
-- `src/components/` — Navbar, Footer, Hero, karty, FAQ, …
-- `src/config/site.ts` — centrální konfigurace (env-driven)
-- `src/config/content.ts`, `extra.ts` — herní obsah (volby, dekrety, profese, VIP, tým, pravidla)
+- `src/app/` - stránky (Domů, Jak začít, Jak se hraje, Obchod, Mapa, Tým, Pravidla)
+- `src/app/api/status/` - proxy na [mcsrvstat.us](https://mcsrvstat.us) pro live počet hráčů (cache 60 s)
+- `src/components/` - Navbar, Footer, Hero, karty, FAQ, …
+- `src/config/site.ts` - centrální konfigurace (env-driven)
+- `src/config/content.ts`, `extra.ts` - herní obsah (volby, dekrety, profese, VIP, tým, pravidla)
 
 ## Co je potřeba doplnit
 
 - [ ] Reálnou IP + Discord + BlueMap URL + obchod + (volitelně) LiteBans web (`.env.local`)
-- [ ] Skutečné ceny VIP balíčků (`src/config/extra.ts` — perky odpovídají LuckPerms)
+- [ ] Skutečné ceny VIP balíčků (`src/config/extra.ts` - perky odpovídají LuckPerms)
 - [ ] Skutečná jména / avatary členů týmu (`src/config/extra.ts`)
 
 ## SEO

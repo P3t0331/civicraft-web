@@ -8,7 +8,7 @@ import { siteConfig } from "@/config/site";
 import { presidentialPowers, decrees, jobs, electionTimeline } from "@/config/content";
 
 export const metadata: Metadata = {
-  title: "Jak se hraje — volby, města, ekonomika",
+  title: "Jak se hraje - volby, města, ekonomika",
   description:
     "Kompletní průvodce Civicraftem: cesta od Imigranta k Občanovi, Towny města, prezidentské volby, dekrety, národní pokladna, referenda, 7 profesí a unikátní svět.",
   alternates: { canonical: "/jak-se-hraje" },
@@ -55,11 +55,11 @@ export default function JakSeHrajePage() {
               align="left"
               eyebrow="Cesta hráče"
               title={<>Nejdřív <span className="text-gradient-gold">Imigrant</span>, pak Občan</>}
-              subtitle="Občanství se nezískává členstvím ve městě — vyhraje se časem a aktivitou."
+              subtitle="Občanství se nezískává členstvím ve městě - vyhraje se časem a aktivitou."
             />
             <ul className="mt-6 space-y-3 text-sm text-ink-300">
               {[
-                "Začínáš jako Imigrant — přežíváš v divočině a vyděláváš přes /jobs",
+                "Začínáš jako Imigrant - přežíváš v divočině a vyděláváš přes /jobs",
                 "Po zhruba 10 hodinách hry se automaticky staneš Občanem",
                 "Teprve Občan může zakládat/vstupovat do měst a volit",
                 "Občan může také kandidovat na prezidenta",
@@ -74,8 +74,8 @@ export default function JakSeHrajePage() {
           <Reveal>
             <div className="space-y-3">
               {[
-                { icon: "🧳", t: "Imigrant", d: "Start — divočina, profese, první peníze. Bez měst." },
-                { icon: "🪪", t: "Občan", d: "Po ~10 h — města, hlasování, kandidatura." },
+                { icon: "🧳", t: "Imigrant", d: "Start - divočina, profese, první peníze. Bez měst." },
+                { icon: "🪪", t: "Občan", d: "Po ~10 h - města, hlasování, kandidatura." },
                 { icon: "🏘️", t: "Starosta", d: "Kdo založí město přes /town create." },
                 { icon: "👑", t: "Prezident", d: "Vítěz voleb s pokladnou a dekrety." },
               ].map((x) => (
@@ -105,9 +105,9 @@ export default function JakSeHrajePage() {
               />
               <ul className="mt-6 space-y-3 text-sm text-ink-300">
                 {[
-                  "/town create <název> — založ vlastní město a staň se starostou",
-                  "/town join <město> — přidej se ke kamarádům do existujícího města",
-                  "Ve městech je griefing vypnutý — stavby jsou chráněné",
+                  "/town create <název> - založ vlastní město a staň se starostou",
+                  "/town join <město> - přidej se ke kamarádům do existujícího města",
+                  "Ve městech je griefing vypnutý - stavby jsou chráněné",
                   "Správa města přes /mesto (GUI)",
                 ].map((t) => (
                   <li key={t} className="flex gap-3">
@@ -144,7 +144,7 @@ export default function JakSeHrajePage() {
         <SectionHeading
           eyebrow="Volební cyklus"
           title={<>Volby každých <span className="text-gradient-gold">7 dní</span></>}
-          subtitle="Kandidatura, kampaň, hlasování a inaugurace — celý demokratický proces přímo ve hře přes /president."
+          subtitle="Kandidatura, kampaň, hlasování a inaugurace - celý demokratický proces přímo ve hře přes /president."
         />
         <ol className="mt-14 grid gap-6 md:grid-cols-4">
           {electionTimeline.map((s, i) => (
@@ -262,11 +262,11 @@ export default function JakSeHrajePage() {
                 align="left"
                 eyebrow="Brzdy a protiváhy"
                 title={<>Moc má vždy <span className="text-gradient-gold">pojistku</span></>}
-                subtitle="Prezident není neomezený vládce. Občané drží v rukou nástroje přímé demokracie — referenda i možnost odvolání."
+                subtitle="Prezident není neomezený vládce. Občané drží v rukou nástroje přímé demokracie - referenda i možnost odvolání."
               />
               <p className="mt-5 text-sm leading-relaxed text-ink-300">
                 Špatná vláda? Občané se mohou bránit. Dobrá vláda? Bude znovuzvolena. A staff? Ten do
-                politiky nikdy nezasahuje — server žije vlastním životem a my jen moderujeme a vymáháme pravidla.
+                politiky nikdy nezasahuje - server žije vlastním životem a my jen moderujeme a vymáháme pravidla.
               </p>
             </div>
           </div>
@@ -301,7 +301,7 @@ export default function JakSeHrajePage() {
           <SectionHeading
             eyebrow="Generátor světa Iris"
             title={<>Svět s <span className="text-gradient-gold">300+ biomy</span></>}
-            subtitle="Civicraft běží na pokročilém generátoru Iris. Žádné nudné placky — divočina je plná míst, jaká v běžném Minecraftu neuvidíš. A časem přidáme i vlastní biomy."
+            subtitle="Civicraft běží na pokročilém generátoru Iris. Žádné nudné placky - divočina je plná míst, jaká v běžném Minecraftu neuvidíš. A časem přidáme i vlastní biomy."
           />
           <div className="mx-auto mt-12 max-w-4xl">
             <div className="flex flex-wrap justify-center gap-2">

@@ -7,7 +7,7 @@ import { CtaBand } from "@/components/CtaBand";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Jak začít — připoj se na Civicraft",
+  title: "Jak začít - připoj se na Civicraft",
   description:
     "Návod krok za krokem, jak se připojit na Civicraft CZ/SK. Stáhni Minecraft Java 26.1.2, přidej IP, zaregistruj se, přežij jako Imigrant a staň se Občanem.",
   alternates: { canonical: "/jak-zacit" },
@@ -33,7 +33,7 @@ const steps = [
   {
     n: 4,
     title: "Vydej se do divočiny (jsi Imigrant)",
-    text: "Začínáš jako Imigrant. Příkazem /rtp nebo /wild se teleportuješ do divočiny. Postav si základnu a rozjeď profese přes /jobs — v divočině se hraje naostro, griefing je tu povolen.",
+    text: "Začínáš jako Imigrant. Příkazem /rtp nebo /wild se teleportuješ do divočiny. Postav si základnu a rozjeď profese přes /jobs - v divočině se hraje naostro, griefing je tu povolen.",
   },
   {
     n: 5,
@@ -58,7 +58,7 @@ export default function JakZacitPage() {
       <PageHeader
         eyebrow="Jak začít"
         title={<>Připoj se za <span className="text-gradient-gold">pár minut</span></>}
-        subtitle="Od stažení hry po vlastní město. Stačí pár kroků a píšeš svůj příběh — od imigranta po prezidenta."
+        subtitle="Od stažení hry po vlastní město. Stačí pár kroků a píšeš svůj příběh - od imigranta po prezidenta."
       />
 
       <Section className="pt-4">
@@ -110,12 +110,12 @@ export default function JakZacitPage() {
               <a href={siteConfig.irisShaderUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-gold-400 hover:underline">
                 Iris
               </a>{" "}
-              bude vypadat ještě nádherněji — nasvícení, stíny a voda jako z pohlednice.
+              bude vypadat ještě nádherněji - nasvícení, stíny a voda jako z pohlednice.
             </p>
           </div>
 
           <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
-            <Button href={siteConfig.discordUrl} external>Potřebuju pomoc — Discord</Button>
+            <Button href={siteConfig.discordUrl} external>Potřebuju pomoc - Discord</Button>
             <Button href="/jak-se-hraje" variant="secondary">Jak se hraje →</Button>
           </div>
         </div>

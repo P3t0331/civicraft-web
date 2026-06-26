@@ -4,7 +4,7 @@ import { Section, Button } from "@/components/ui";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Živá mapa — prozkoumej svět Civicraftu",
+  title: "Živá mapa - prozkoumej svět Civicraftu",
   description:
     "Interaktivní 3D živá mapa serveru Civicraft (BlueMap). Prohlédni si města, hranice národa a stavby v reálném čase přímo v prohlížeči.",
   alternates: { canonical: "/mapa" },
@@ -33,7 +33,7 @@ export default function MapaPage() {
           <div className="relative aspect-[16/10] w-full bg-navy-900">
             <iframe
               src={siteConfig.bluemapUrl}
-              title="Civicraft — živá mapa (BlueMap)"
+              title="Civicraft - živá mapa (BlueMap)"
               className="absolute inset-0 h-full w-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

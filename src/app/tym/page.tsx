@@ -7,9 +7,9 @@ import { team } from "@/config/extra";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Tým — lidé za Civicraftem",
+  title: "Tým - lidé za Civicraftem",
   description:
-    "Poznej tým, který stojí za serverem Civicraft CZ/SK — zakladatele, administrátory a moderátory, kteří se starají o férovou a přátelskou komunitu.",
+    "Poznej tým, který stojí za serverem Civicraft CZ/SK - zakladatele, administrátory a moderátory, kteří se starají o férovou a přátelskou komunitu.",
   alternates: { canonical: "/tym" },
 };
 

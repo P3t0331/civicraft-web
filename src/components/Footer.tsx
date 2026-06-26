@@ -74,7 +74,7 @@ export function Footer() {
 
       <div className="border-t border-white/5">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-6 text-xs text-ink-500 sm:flex-row sm:px-8">
-          <p>© {new Date().getFullYear()} Civicraft.cz — Všechna práva vyhrazena.</p>
+          <p>© {new Date().getFullYear()} Civicraft.cz - Všechna práva vyhrazena.</p>
           <p>
             Není přidružený k Mojang Studios ani Microsoft. Minecraft je ochranná známka Mojang Studios.
           </p>

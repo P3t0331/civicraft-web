@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site";
 
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
-export const alt = "Civicraft — Politický Survival CZ/SK Minecraft server";
+export const alt = "Civicraft - Politický Survival CZ/SK Minecraft server";
 
 export default function OgImage() {
   return new ImageResponse(

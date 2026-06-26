@@ -16,7 +16,7 @@ export function CtaBand() {
             Připraven vstoupit do <span className="text-gradient-gold">politiky</span>?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-ink-300 sm:text-lg">
-            Spusť Minecraft, připoj se a napiš svůj příběh — od obyvatele přes občana až po prezidenta.
+            Spusť Minecraft, připoj se a napiš svůj příběh - od obyvatele přes občana až po prezidenta.
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button href={siteConfig.discordUrl} external className="px-7 py-3.5 text-base">

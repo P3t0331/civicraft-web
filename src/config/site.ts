@@ -1,6 +1,6 @@
 /**
  * Centrální konfigurace webu Civicraft.
- * Reálné hodnoty (IP, Discord, mapa, obchod) se nastavují přes .env.local —
+ * Reálné hodnoty (IP, Discord, mapa, obchod) se nastavují přes .env.local -
  * dokud nejsou vyplněné, použijí se rozumné placeholdery.
  */
 
@@ -20,7 +20,7 @@ export const siteConfig = {
   bluemapUrl: process.env.NEXT_PUBLIC_BLUEMAP_URL ?? "https://mapa.civicraft.cz",
   storeUrl: process.env.NEXT_PUBLIC_STORE_URL ?? "https://civicraft.cz/obchod",
   litebansUrl: process.env.NEXT_PUBLIC_LITEBANS_URL ?? "", // veřejný LiteBans web (prázdné = jen info)
-  // Iris shaders mod (vylepší vzhled custom světa) — pozor, jiné než Iris generátor světa
+  // Iris shaders mod (vylepší vzhled custom světa) - pozor, jiné než Iris generátor světa
   irisShaderUrl: "https://modrinth.com/mod/iris",
 
   // Pro live status (mcsrvstat.us). Lze přepsat samostatným hostem/portem.

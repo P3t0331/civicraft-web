@@ -1,5 +1,5 @@
 /**
- * VIP balíčky, tým a pravidla — odpovídá reálnému LuckPerms nastavení serveru.
+ * VIP balíčky, tým a pravidla - odpovídá reálnému LuckPerms nastavení serveru.
  * Ceny jsou placeholdery, uprav dle reality. Veškerý text je v češtině.
  */
 
@@ -18,7 +18,7 @@ export const ranks: Rank[] = [
     name: "Vážený Občan",
     group: "vip",
     price: "99 Kč",
-    tagline: "Vstupní VIP — komfort do začátku",
+    tagline: "Vstupní VIP - komfort do začátku",
     color: "emerald",
     perks: [
       "Prefix [Vážený Občan] v chatu",
@@ -83,7 +83,7 @@ export const team: Member[] = [
 
 export type Rule = { icon: string; title: string; text: string };
 
-// Záměrně málo pravidel — Civicraft drží věci jednoduché.
+// Záměrně málo pravidel - Civicraft drží věci jednoduché.
 export const rules: Rule[] = [
   {
     icon: "🤝",
@@ -98,17 +98,17 @@ export const rules: Rule[] = [
   {
     icon: "🏘️",
     title: "Griefing jen v divočině",
-    text: "V divočině se hraje naostro — griefing je povolen. Uvnitř měst je díky Towny vypnutý, stavby ve městě jsou chráněné.",
+    text: "V divočině se hraje naostro - griefing je povolen. Uvnitř měst je díky Towny vypnutý, stavby ve městě jsou chráněné.",
   },
   {
     icon: "🗳️",
     title: "Férová politika",
-    text: "Volby jsou férové — kupování hlasů reálnými penězi je zakázáno. Staff nikdy nekandiduje a nezasahuje do politiky.",
+    text: "Volby jsou férové - kupování hlasů reálnými penězi je zakázáno. Staff nikdy nekandiduje a nezasahuje do politiky.",
   },
   {
     icon: "🔒",
     title: "Jeden účet, chraň si ho",
-    text: "Jeden hlavní účet na hráče; alty na obcházení banů jsou zakázané. Své heslo k /login nikomu nedávej — staff ho po tobě nikdy nechce.",
+    text: "Jeden hlavní účet na hráče; alty na obcházení banů jsou zakázané. Své heslo k /login nikomu nedávej - staff ho po tobě nikdy nechce.",
   },
   {
     icon: "📢",

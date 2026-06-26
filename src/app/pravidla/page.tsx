@@ -47,7 +47,7 @@ export default function PravidlaPage() {
           <h2 className="font-display text-lg font-bold text-ink-100">⚠️ Porušení pravidel</h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-ink-300">
             Podle závažnosti následuje varování, mute, dočasný nebo trvalý ban. Staff řeší jen
-            moderaci a vymáhání pravidel — do politiky serveru nikdy nezasahuje. Aktivní bany si můžeš
+            moderaci a vymáhání pravidel - do politiky serveru nikdy nezasahuje. Aktivní bany si můžeš
             ověřit na stránce{" "}
             <Link href="/bany" className="font-semibold text-gold-400 hover:underline">Bany</Link>.
           </p>
@@ -56,7 +56,7 @@ export default function PravidlaPage() {
             <a href={siteConfig.discordUrl} target="_blank" rel="noopener noreferrer" className="text-gold-400 hover:underline">
               Discordu
             </a>{" "}
-            — pravidla i obsah serveru upravujeme podle zpětné vazby hráčů.
+            - pravidla i obsah serveru upravujeme podle zpětné vazby hráčů.
           </p>
         </div>
       </Section>

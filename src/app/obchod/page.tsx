@@ -7,9 +7,9 @@ import { ranks } from "@/config/extra";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Obchod — VIP a klíče, podpoř server",
+  title: "Obchod - VIP a klíče, podpoř server",
   description:
-    "Podpoř Civicraft koupí VIP (Vážený Občan, Mecenáš, Honorár) nebo klíčů do truhel. Komfort, kosmetika a bonusy k profesím — žádné pay-to-win.",
+    "Podpoř Civicraft koupí VIP (Vážený Občan, Mecenáš, Honorár) nebo klíčů do truhel. Komfort, kosmetika a bonusy k profesím - žádné pay-to-win.",
   alternates: { canonical: "/obchod" },
 };
 
@@ -25,7 +25,7 @@ export default function ObchodPage() {
       <PageHeader
         eyebrow="Obchod"
         title={<>Podpoř server, <span className="text-gradient-gold">získej výhody</span></>}
-        subtitle="Server udržujeme v chodu díky vám. Podpořit nás můžeš dvěma způsoby — koupí VIP nebo klíčů do truhel. Vše je komfort a kosmetika, nikdy herní převaha."
+        subtitle="Server udržujeme v chodu díky vám. Podpořit nás můžeš dvěma způsoby - koupí VIP nebo klíčů do truhel. Vše je komfort a kosmetika, nikdy herní převaha."
       />
 
       <Section className="pt-4">

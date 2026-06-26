@@ -12,7 +12,7 @@ export function CopyIp({ compact = false }: { compact?: boolean }) {
       setCopied(true);
       setTimeout(() => setCopied(false), 1800);
     } catch {
-      /* clipboard nedostupný — ignoruj */
+      /* clipboard nedostupný - ignoruj */
     }
   };
 

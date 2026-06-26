@@ -4,7 +4,7 @@ import { Section, Button } from "@/components/ui";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
-  title: "Bany — historie trestů",
+  title: "Bany - historie trestů",
   description:
     "Veřejná historie banů, mute a varování na serveru Civicraft (LiteBans). Ověř si stav trestu online nebo přímo ve hře.",
   alternates: { canonical: "/bany" },
@@ -24,7 +24,7 @@ export default function BanyPage() {
       <PageHeader
         eyebrow="Bany"
         title={<>Historie <span className="text-gradient-gold">trestů</span></>}
-        subtitle="Transparentní moderace. Aktivní bany, mute a varování si můžeš kdykoliv ověřit — online i přímo ve hře."
+        subtitle="Transparentní moderace. Aktivní bany, mute a varování si můžeš kdykoliv ověřit - online i přímo ve hře."
       />
 
       <Section className="pt-4">
@@ -42,7 +42,7 @@ export default function BanyPage() {
             <div className="relative aspect-[16/11] w-full bg-navy-900">
               <iframe
                 src={siteConfig.litebansUrl}
-                title="Civicraft — historie banů (LiteBans)"
+                title="Civicraft - historie banů (LiteBans)"
                 className="absolute inset-0 h-full w-full"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
