@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Sora, Inter, Press_Start_2P } from "next/font/google";
+import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
@@ -8,10 +8,11 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
-const sora = Sora({
-  variable: "--font-sora",
+// Charter serif — autoritativní, editoriální nadpisy
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin", "latin-ext"],
-  weight: ["600", "700", "800"], // Sora se používá jen na nadpisy (semibold/bold/extrabold)
+  weight: ["400", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -21,10 +22,11 @@ const inter = Inter({
   display: "swap",
 });
 
-const pixel = Press_Start_2P({
-  variable: "--font-pixel",
-  subsets: ["latin"],
-  weight: "400",
+// „Úřední" typewriter mono — razítka, kódy, popisky
+const jbmono = JetBrains_Mono({
+  variable: "--font-jbmono",
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
@@ -101,9 +103,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html
       lang="cs"
-      className={`${sora.variable} ${inter.variable} ${pixel.variable} h-full antialiased`}
+      className={`${fraunces.variable} ${inter.variable} ${jbmono.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-navy-900">
+      <body className="flex min-h-full flex-col bg-navy-950">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

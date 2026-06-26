@@ -4,6 +4,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { Section } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
+import { Corners } from "@/components/dossier";
 import { rules } from "@/config/extra";
 import { siteConfig } from "@/config/site";
 
@@ -27,13 +28,14 @@ export default function PravidlaPage() {
         <div className="mx-auto grid max-w-4xl gap-5 sm:grid-cols-2">
           {rules.map((rule, i) => (
             <Reveal key={rule.title} delay={i * 60} as="article">
-              <div className="flex h-full gap-4 rounded-3xl border border-white/10 bg-navy-850/60 p-6">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gold-500/10 text-2xl">
+              <div className="dossier noise relative flex h-full gap-4 p-6">
+                <Corners className="text-blueprint-500/30" />
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-sm bg-gold-500/10 text-2xl">
                   {rule.icon}
                 </span>
                 <div>
                   <h2 className="font-display text-lg font-bold text-ink-100">
-                    <span className="mr-2 font-mono text-sm text-gold-400">{i + 1}.</span>
+                    <span className="file-no mr-2 text-sm text-gold-400">{i + 1}.</span>
                     {rule.title}
                   </h2>
                   <p className="mt-2 text-sm leading-relaxed text-ink-300">{rule.text}</p>
@@ -43,13 +45,14 @@ export default function PravidlaPage() {
           ))}
         </div>
 
-        <div className="mx-auto mt-10 max-w-4xl rounded-3xl border border-civic-500/20 bg-civic-500/[0.06] p-7 text-center">
+        <div className="dossier relative mx-auto mt-10 max-w-4xl border-wax-500/25 p-7 text-center">
+          <Corners className="text-wax-500/40" />
           <h2 className="font-display text-lg font-bold text-ink-100">⚠️ Porušení pravidel</h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-ink-300">
             Podle závažnosti následuje varování, mute, dočasný nebo trvalý ban. Staff řeší jen
             moderaci a vymáhání pravidel - do politiky serveru nikdy nezasahuje. Aktivní bany si můžeš
             ověřit na stránce{" "}
-            <Link href="/bany" className="font-semibold text-gold-400 hover:underline">Bany</Link>.
+            <Link href="/bany" className="font-semibold text-gold-400 hover:underline">Rejstřík trestů</Link>.
           </p>
           <p className="mx-auto mt-3 max-w-2xl text-xs text-ink-500">
             Návrhy a problémy řeš na{" "}

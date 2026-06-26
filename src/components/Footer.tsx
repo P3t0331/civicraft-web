@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 import { CopyIp } from "./CopyIp";
+import { Seal, FileTag } from "./dossier";
 import { navLinks, siteConfig } from "@/config/site";
 
 export function Footer() {
   return (
-    <footer className="relative mt-auto border-t border-white/10 bg-navy-950">
-      <div className="bg-radial-gold absolute inset-x-0 top-0 h-px" />
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr]">
+    <footer className="relative mt-auto border-t border-blueprint-500/20 bg-navy-950">
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/40 to-transparent" aria-hidden />
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ink-400">
@@ -20,9 +21,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-sm font-bold uppercase tracking-wider text-ink-300">
-            Navigace
-          </h3>
+          <h3 className="label-mono text-ink-300">Rejstřík</h3>
           <ul className="mt-4 space-y-2.5">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -35,9 +34,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="font-display text-sm font-bold uppercase tracking-wider text-ink-300">
-            Komunita
-          </h3>
+          <h3 className="label-mono text-ink-300">Komunita</h3>
           <ul className="mt-4 space-y-2.5">
             <li>
               <a
@@ -53,29 +50,30 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <Link href="/mapa" className="text-sm text-ink-400 transition-colors hover:text-gold-400">
-                Živá mapa
-              </Link>
+              <Link href="/mapa" className="text-sm text-ink-400 transition-colors hover:text-gold-400">Živá mapa</Link>
             </li>
             <li>
-              <Link href="/bany" className="text-sm text-ink-400 transition-colors hover:text-gold-400">
-                Bany
-              </Link>
+              <Link href="/bany" className="text-sm text-ink-400 transition-colors hover:text-gold-400">Rejstřík trestů</Link>
             </li>
             <li>
-              <Link href="/obchod" className="text-sm text-ink-400 transition-colors hover:text-gold-400">
-                Podpoř server (VIP)
-              </Link>
+              <Link href="/obchod" className="text-sm text-ink-400 transition-colors hover:text-gold-400">Podpoř server</Link>
             </li>
-            <li className="pt-1 text-sm text-ink-500">Verze: {siteConfig.serverVersion}</li>
+            <li className="pt-1">
+              <FileTag>Verze {siteConfig.serverVersion}</FileTag>
+            </li>
           </ul>
         </div>
       </div>
 
       <div className="border-t border-white/5">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-5 py-6 text-xs text-ink-500 sm:flex-row sm:px-8">
-          <p>© {new Date().getFullYear()} Civicraft.cz - Všechna práva vyhrazena.</p>
-          <p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-5 py-6 sm:flex-row sm:px-8">
+          <div className="flex items-center gap-3">
+            <Seal label="CC" sub="MMXXVI" tone="gold" size="sm" />
+            <p className="text-xs text-ink-500">
+              © {new Date().getFullYear()} Civicraft.cz · Všechna práva vyhrazena.
+            </p>
+          </div>
+          <p className="max-w-md text-center text-[0.7rem] leading-relaxed text-ink-500 sm:text-right">
             Není přidružený k Mojang Studios ani Microsoft. Minecraft je ochranná známka Mojang Studios.
           </p>
         </div>

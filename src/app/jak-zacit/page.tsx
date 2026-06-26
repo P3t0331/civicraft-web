@@ -4,6 +4,7 @@ import { Section, Button } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { CopyIp } from "@/components/CopyIp";
 import { CtaBand } from "@/components/CtaBand";
+import { Stamp, FileTag, Corners } from "@/components/dossier";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -48,7 +49,7 @@ const steps = [
   {
     n: 7,
     title: "Postav město nebo se přidej ke kamarádům",
-    text: "Příkazem /town create <název> založíš vlastní město a staneš se starostou, nebo se přidej do existujícího přes /town join <město>. Otevři správu města přes /mesto. Politiku řídíš přes /president.",
+    text: "Příkazem /town create <název> založíš vlastní město a staneš se starostou, nebo se přidej do existujícího přes /town join <město>. Město spravuješ přes /town a politiku přes /president.",
   },
 ];
 
@@ -64,22 +65,23 @@ export default function JakZacitPage() {
       <Section className="pt-4">
         <div className="mx-auto max-w-3xl">
           {/* IP karta */}
-          <div className="mb-12 flex flex-col items-center gap-4 rounded-2xl border border-gold-500/20 bg-navy-850/70 p-6 text-center sm:flex-row sm:justify-between sm:text-left">
+          <div className="dossier relative flex flex-col items-center gap-4 p-6 text-center sm:flex-row sm:justify-between sm:text-left">
+            <Corners className="text-gold-500/40" />
             <div>
-              <div className="text-sm font-semibold uppercase tracking-wider text-gold-400">IP serveru</div>
-              <div className="mt-1 font-display text-2xl font-bold text-ink-100">{siteConfig.serverIp}</div>
-              <div className="mt-1 text-xs text-ink-400">Verze {siteConfig.serverVersion}</div>
+              <div className="label-mono text-blueprint-400">IP serveru</div>
+              <div className="mt-1.5 font-display text-2xl font-black text-ink-100">{siteConfig.serverIp}</div>
+              <FileTag className="mt-1 block">Verze {siteConfig.serverVersion}</FileTag>
             </div>
             <CopyIp />
           </div>
 
           {/* Kroky */}
-          <ol className="relative space-y-5 border-l border-white/10 pl-8">
+          <ol className="relative mt-12 space-y-5 border-l border-dashed border-blueprint-500/30 pl-8">
             {steps.map((s, i) => (
-              <Reveal key={s.n} delay={i * 70} as="li">
-                <div className="relative rounded-2xl border border-white/10 bg-navy-850/60 p-6">
-                  <span className="absolute -left-[3.05rem] top-6 grid h-9 w-9 place-items-center rounded-full border border-gold-500/40 bg-navy-900 font-display text-sm font-bold text-gold-400">
-                    {s.n}
+              <Reveal key={s.n} delay={i * 60} as="li">
+                <div className="dossier relative p-6">
+                  <span className="absolute -left-[3.15rem] top-6 grid h-9 w-9 place-items-center rounded-sm border border-gold-500/50 bg-navy-900 font-mono text-sm font-bold text-gold-400">
+                    {String(s.n).padStart(2, "0")}
                   </span>
                   <h2 className="font-display text-lg font-bold text-ink-100">{s.title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-ink-300">{s.text}</p>
@@ -94,8 +96,9 @@ export default function JakZacitPage() {
           </ol>
 
           {/* Tip: kamarádi */}
-          <div className="mt-10 rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.06] p-6">
-            <h3 className="font-display text-lg font-bold text-ink-100">🤝 Tip: přiveď kamarády</h3>
+          <div className="dossier mt-10 border-emerald-500/25 p-6">
+            <Stamp tone="cyan">Doporučení</Stamp>
+            <h3 className="mt-4 font-display text-lg font-bold text-ink-100">Přiveď kamarády 🤝</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink-200">
               Civicraft se hraje nejlíp v partě. Společné město roste rychleji a čím víc vás je,
               tím větší šance, že někdo z vás vyhraje prezidentské volby. Pošli jim IP a hrajte spolu.
@@ -103,8 +106,9 @@ export default function JakZacitPage() {
           </div>
 
           {/* Tip: Iris shadery */}
-          <div className="mt-5 rounded-2xl border border-civic-500/20 bg-civic-500/[0.06] p-6">
-            <h3 className="font-display text-lg font-bold text-ink-100">🌍 Tip: zapni si Iris shadery</h3>
+          <div className="dossier mt-5 p-6">
+            <Stamp tone="gold">Doporučení</Stamp>
+            <h3 className="mt-4 font-display text-lg font-bold text-ink-100">Zapni si Iris shadery 🌍</h3>
             <p className="mt-2 text-sm leading-relaxed text-ink-200">
               Náš svět běží na pokročilém generátoru Iris s 300+ biomy. S shader modem{" "}
               <a href={siteConfig.irisShaderUrl} target="_blank" rel="noopener noreferrer" className="font-semibold text-gold-400 hover:underline">

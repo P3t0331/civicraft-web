@@ -77,7 +77,7 @@ export type Member = {
 export const team: Member[] = [
   { name: "Asistent", role: "Podpora hráčů", bio: "První pomoc novým hráčům a základní moderace. Nezasahuje do politiky serveru.", color: "emerald" },
   { name: "Moderátor", role: "Moderace", bio: "Řeší spory, hlídá dodržování pravidel a pomáhá komunitě v terénu.", color: "civic" },
-  { name: "Admin", role: "Správce serveru", bio: "Technické zázemí, správa serveru, pluginů a aktualizací.", color: "gold" },
+  { name: "Admin", role: "Hlavní moderace", bio: "Primárně dohlíží na dodržování pravidel a řeší závažnější přestupky.", color: "gold" },
   { name: "Zakladatel", role: "Owner & vývoj", bio: "Tvůrce Civicraftu a custom pluginů CivicraftGov a CivicraftJobs.", color: "gold" },
 ];
 

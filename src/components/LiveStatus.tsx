@@ -38,7 +38,7 @@ export function LiveStatus({ className = "" }: { className?: string }) {
 
   return (
     <div
-      className={`inline-flex items-center gap-2.5 rounded-full border border-white/10 bg-navy-800/70 px-4 py-2 backdrop-blur ${className}`}
+      className={`inline-flex items-center gap-2.5 rounded-md border border-blueprint-500/30 bg-navy-900/70 px-4 py-2 ${className}`}
     >
       <span className="relative flex h-2.5 w-2.5">
         {online && (
@@ -46,19 +46,19 @@ export function LiveStatus({ className = "" }: { className?: string }) {
         )}
         <span
           className={`relative inline-flex h-2.5 w-2.5 rounded-full ${
-            loading ? "bg-ink-400" : online ? "bg-emerald-500" : "bg-civic-500"
+            loading ? "bg-ink-400" : online ? "bg-emerald-500" : "bg-wax-500"
           }`}
         />
       </span>
-      <span className="text-sm font-medium text-ink-200">
+      <span className="label-mono text-ink-300">
         {loading ? (
-          "Načítám status…"
+          "Spojení…"
         ) : online ? (
           <>
-            <span className="font-bold text-ink-100">{count}</span> hráčů online
+            <span className="font-bold text-emerald-400">{count}</span> online
           </>
         ) : (
-          "Server offline"
+          "Před spuštěním"
         )}
       </span>
     </div>

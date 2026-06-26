@@ -2,65 +2,78 @@
 
 import { useState } from "react";
 import { MaintenanceLoginModal } from "@/components/MaintenanceLoginModal";
-import { motion } from "framer-motion";
+import { Button } from "@/components/ui";
+import { CopyIp } from "@/components/CopyIp";
+import { ReconPhoto, Seal, Stamp, Corners } from "@/components/dossier";
+import { siteConfig } from "@/config/site";
 
 export default function MaintenancePage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center bg-[#0a0f1c] overflow-hidden text-slate-200">
-      {/* Background gradients */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-500/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] pointer-events-none" />
-      
-      {/* Grid Pattern */}
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] opacity-50 pointer-events-none" />
+    <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden py-20">
+      {/* Pozadí */}
+      <div className="bg-grid-fine absolute inset-0 opacity-60" aria-hidden />
+      <div className="bg-contour absolute inset-0 opacity-40" aria-hidden />
+      <div className="absolute -top-48 left-1/2 h-[40rem] w-[40rem] -translate-x-1/2 rounded-full bg-gold-500/[0.08] blur-3xl" aria-hidden />
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        <div className="animate-scan h-24 w-full bg-gradient-to-b from-transparent via-blueprint-400/[0.05] to-transparent" />
+      </div>
 
-      <main className="relative z-10 flex flex-col items-center justify-center p-6 text-center max-w-3xl w-full">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="flex flex-col items-center"
-        >
-          {/* Icon */}
-          <div className="mb-8 flex h-24 w-24 items-center justify-center rounded-3xl bg-slate-900/50 border border-white/5 backdrop-blur-md shadow-2xl relative">
-            <div className="absolute inset-0 rounded-3xl border border-amber-500/20" />
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-amber-400"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <div>
+          <div className="flex flex-wrap items-center gap-3">
+            <Stamp tone="wax">Před spuštěním</Stamp>
           </div>
 
-          <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-6xl text-white">
-            Server je ve vývoji
+          <h1 className="mt-7 font-display text-[2.5rem] font-black leading-[1.04] tracking-tight text-ink-100 sm:text-5xl md:text-6xl">
+            Brány se brzy
+            <br />
+            <span className="text-gradient-gold">otevřou.</span>
           </h1>
-          
-          <p className="mb-10 text-lg sm:text-xl text-slate-400 max-w-2xl leading-relaxed">
-            Server je aktuálně ve vývoji a děláme vše pro to, aby byl spuštěn co nejdříve. 
-            Děkujeme za vaši trpělivost!
+
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-300">
+            Civicraft se právě dolaďuje a spuštění se blíží. Přidej se na Discord, ať ti
+            start <span className="text-gold-400">neunikne</span> - a buď u toho od první minuty.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
-            <button
-              onClick={() => window.location.reload()}
-              className="px-8 py-4 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all font-semibold shadow-lg backdrop-blur-md"
-            >
-              Obnovit stránku
-            </button>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="px-8 py-4 rounded-xl text-amber-400 bg-amber-500/10 border border-amber-500/20 hover:bg-amber-500/20 hover:border-amber-500/30 transition-all font-semibold shadow-lg backdrop-blur-md"
-            >
-              Přístup pro tým
-            </button>
+          <div className="mt-9 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+            <Button href={siteConfig.discordUrl} external className="px-7 py-3.5 text-base">
+              Přidej se k zakladatelům
+              <svg viewBox="0 0 24 24" className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </Button>
+            <CopyIp />
           </div>
-        </motion.div>
-      </main>
 
-      {/* Footer info */}
-      <div className="absolute bottom-6 left-0 right-0 text-center text-sm text-slate-500">
-        &copy; {new Date().getFullYear()} Civicraft. All rights reserved.
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="label-mono mt-7 inline-flex items-center gap-2 text-ink-500 transition-colors hover:text-gold-400"
+          >
+            <span className="h-1.5 w-1.5 rotate-45 bg-current" aria-hidden />
+            Přístup pro tým
+          </button>
+        </div>
+
+        {/* Pečeť přes exhibit */}
+        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <ReconPhoto
+            src="/world/spawn.png"
+            caption="Hlavní město (spawn)"
+            priority
+            tape
+            sizes="(max-width: 1024px) 90vw, 45vw"
+            className="rotate-[-1.5deg] shadow-[0_30px_70px_-30px_rgba(0,0,0,0.85)]"
+          />
+          <div className="absolute inset-0 grid place-items-center">
+            <Seal label="✦" sub="Utajeno" tone="wax" size="lg" className="animate-[seal-pulse_3s_ease-in-out_infinite] rotate-[-6deg]" />
+          </div>
+          <Corners className="text-gold-500/0" />
+        </div>
       </div>
 
       {isModalOpen && <MaintenanceLoginModal onClose={() => setIsModalOpen(false)} />}
-    </div>
+    </section>
   );
 }
