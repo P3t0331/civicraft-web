@@ -5,6 +5,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { siteConfig } from "@/config/site";
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 
 const sora = Sora({
@@ -111,6 +112,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <main className="flex-1">{children}</main>
         <Footer />
         <Analytics />
+        <SpeedInsights/>
       </body>
     </html>
   );
